@@ -5,6 +5,9 @@ struct ContentView: View {
 	let greet = Greeting().greeting()
 
 	var body: some View {
+
+	    LocalStorage(this).putOnbord(kOnboard,1)
+
 		Text(greet)
 	}
 }
